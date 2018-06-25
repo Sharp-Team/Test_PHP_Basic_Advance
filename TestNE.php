@@ -62,4 +62,30 @@
 //foreach ($_GET as $key => $value){
 //  echo '<strong>' . $key . " => " . $value . "<strong>\n";
 //}
+//
+//echo (addcslashes('freetuts.net FREETUTS.NET', 'a..z'));
+//// kết quả: \f\r\e\e\t\u\t\s.\n\e\t
 
+//$str = 'freetuts.net is a website free for you';
+//
+//// Mỗi khoảng trắng sẽ là một phần tử trong mảng<br />
+//$split = array();
+//
+//$split  = var_dump(explode(' ', $str));
+//foreach ($split as $key => $value){
+//  echo  $key . "=>" . $value . "\n";
+//}
+//echo  $split[1];
+
+/*Kết quả
+array
+    0 => 'freetuts.net',
+    1 => 'is',
+    2 => 'a' ,
+    3 => 'website',
+    4 => 'free',
+    5 => 'for' ,
+    6 => 'you' */
+$str = 'Freetuts Xin Chào Các Bạn';
+$str = str_replace( array('Freetuts', 'Xin Chào'), array('Freetuts.net', 'Hello'), $str );
+echo $str;
